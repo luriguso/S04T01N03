@@ -55,7 +55,7 @@ Hello, MyName. You are running a Gradle project.
 
 ## ▶️ **How ​​to test**
 
-1. Run both projects from **Eclipse** (or IntelliJ):
+1. Run both projects from **IntelliJ** (or Eclipse):
 - `S04T01N01` → Maven Project (port **9000**)
 - `S04T01N02` → Gradle Project (port **9001**)
 
