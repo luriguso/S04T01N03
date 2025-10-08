@@ -70,17 +70,6 @@ Hello, MyName. You are running a Gradle project.
 
 ---
 
-## 📦 **What to Submit**
-
-You must submit **4 files in total**:
-
-| File Type | Description |
-|------------|-------------|
-| `MavenEnvironment.json` | Exported Postman environment for the Maven project |
-| `GradleEnvironment.json` | Exported Postman environment for the Gradle project |
-| `Maven_Test_Screenshot.png` | Screenshot showing the Maven environment running in Postman |
-| `Gradle_Test_Screenshot.png` | Screenshot showing the Gradle environment running in Postman |
----
 ## 🧠 **Important Notes**
 
 - Make sure both applications are **running simultaneously** on their respective ports.
