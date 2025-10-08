@@ -1,95 +1,95 @@
-# 🚀 Nivel 3 - Ejercicio de Postman
+# 🚀 Level 3 - Postman Exercise
 
-📄 **Descripción - Enunciado del Ejercicio**
+📄 **Description - Exercise Statement**
 
-Este ejercicio se centra en probar los proyectos anteriores de Spring Boot (**Maven** y **Gradle**) con **Postman**.
-Crearás dos entornos diferentes en Postman, configurarás variables y realizarás llamadas a la API para verificar que ambas aplicaciones respondan correctamente.
-
----
-
-## 💻 **Objetivo**
-
-- Aprender a usar los **entornos de Postman** para probar las API REST.
-- Probar los **endpoints HelloWorld** de los proyectos Maven y Gradle.
-- Demostrar que ambos servidores responden correctamente al ejecutarse simultáneamente en puertos diferentes.
+This exercise focuses on testing the previous Spring Boot projects (**Maven** and **Gradle**) with **Postman**.
+You will create two different environments in Postman, configure variables, and make API calls to verify that both applications respond correctly.
 
 ---
 
-## ⚙️ **Configuración de Postman**
+## 💻 **Objective**
 
-### 🌐 Crear dos entornos:
+- Learn how to use **Postman environments** to test REST APIs.
+- Test the **HelloWorld** endpoints of Maven and Gradle projects.
+- Demonstrate that both servers respond correctly when running simultaneously on different ports.
 
-1. **Proyecto Maven**
-2. **Proyecto Gradle**
+---
 
-Cada entorno debe incluir las siguientes variables:
+## ⚙️ **Postman Configuration**
 
-| Variable | Valor (Maven) | Valor (Gradle) | Descripción |
+### 🌐 Create two environments:
+
+1. **Maven Project**
+2. **Gradle Project**
+
+Each environment must include the following variables:
+
+| Variable | Value (Maven) | Value (Gradle) | Description |
 |-----------|---------------|----------------|--------------|
-| `servidor` | `http://localhost` | `http://localhost` | URL base del servidor |
-| `puerto` | `9000` | `9001` | Número de puerto del servidor |
+| `server` | `http://localhost` | `http://localhost` | Server base URL |
+| `port` | `9000` | `9001` | Server port number |
 
 ---
 
-## 🔧 **Ejemplo de URL con variables de entorno**
+## 🔧 **URL Example with Environment Variables**
 
-Puedes probar los endpoints con el siguiente formato de URL dinámica:
+You can test endpoints with the following dynamic URL format:
 
 ```
-{{servidor}}:{{puerto}}/HolaMundo/MiNombre
+{{server}}:{{port}}/HelloWorld/MyName
 ```
 
-### ✅ Resultados del ejemplo
+### ✅ Example Results
 
-- **Proyecto Maven (puerto 9000):**
+- **Maven Project (port 9000):**
 ```
-Hola, MiNombre. Estás ejecutando un proyecto Maven.
+Hello, MyName. You are running a Maven project.
 ```
 
-- **Proyecto Gradle (puerto 9001):**
+- **Gradle Project (port 9001):**
 ```
-Hola, MiNombre. Estás ejecutando un proyecto Gradle.
+Hello, MyName. You are running a Gradle project.
 ```
 
 ---
 
-## ▶️ **Cómo probar**
+## ▶️ **How ​​to test**
 
-1. Ejecuta ambos proyectos desde **Eclipse** (o IntelliJ):
-- `S04T01N01` → Proyecto Maven (puerto **9000**)
-- `S04T01N02` → Proyecto Gradle (puerto **9001**)
+1. Run both projects from **Eclipse** (or IntelliJ):
+- `S04T01N01` → Maven Project (port **9000**)
+- `S04T01N02` → Gradle Project (port **9001**)
 
-2. Abre **Postman** y crea los dos entornos descritos anteriormente.
+2. Open **Postman** and create the two environments described above.
 
-3. Selecciona un entorno a la vez y ejecuta una solicitud `GET` a:
+3. Select one environment at a time and execute a `GET` request to:
 ```
-{{servidor}}:{{puerto}}/HelloWorld/MyName
+{{server}}:{{port}}/HelloWorld/MyName
 ```
 
-4. Verifica que cada proyecto responda correctamente con su mensaje correspondiente.
+4. Verify that each project responds correctly with its corresponding message.
 
 ---
 
-## 📦 **Qué entregar**
+## 📦 **What to Submit**
 
-Debes enviar **4 archivos en total**:
+You must submit **4 files in total**:
 
-| Tipo de archivo | Descripción |
+| File Type | Description |
 |------------|-------------|
-| `MavenEnvironment.json` | Entorno de Postman exportado para el proyecto Maven |
-| `GradleEnvironment.json` | Entorno de Postman exportado para el proyecto Gradle |
-| `Maven_Test_Screenshot.png` | Captura de pantalla que muestra la ejecución del entorno Maven en Postman |
-| `Gradle_Test_Screenshot.png` | Captura de pantalla que muestra la ejecución del entorno Gradle en Postman |
+| `MavenEnvironment.json` | Exported Postman environment for the Maven project |
+| `GradleEnvironment.json` | Exported Postman environment for the Gradle project |
+| `Maven_Test_Screenshot.png` | Screenshot showing the Maven environment running in Postman |
+| `Gradle_Test_Screenshot.png` | Screenshot showing the Gradle environment running in Postman |
 ---
-## 🧠 **Notas importantes**
+## 🧠 **Important Notes**
 
-- Asegúrese de que ambas aplicaciones se **ejecuten simultáneamente** en sus respectivos puertos.
-- Use las **variables de entorno** en Postman en lugar de codificar las URL.
-- Verifique que las respuestas coincidan con el mensaje esperado de cada proyecto.
+- Make sure both applications are **running simultaneously** on their respective ports.
+- Use **environment variables** in Postman instead of hardcoding URLs.
+- Verify that responses match the expected message for each project.
 
 - ---
 
-## ✍️ **Autor**
+## ✍️ **Author**
 
-Desarrollado por [Luriguso](https://github.com/luriguso)
-Parte del sprint educativo en **IT Academy**
+Developed by [Luriguso](https://github.com/luriguso)
+Part of the educational sprint at **IT Academy**
